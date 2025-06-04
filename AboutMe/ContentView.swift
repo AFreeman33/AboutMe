@@ -9,10 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       Text("Test")
+        Text("About Me")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(Color.purple)
+        VStack{
+            Image("BabyLon")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+        }
+        
     }
 }
+        #Preview {
+            ContentView()
+        }
 
-#Preview {
-    ContentView()
-}
